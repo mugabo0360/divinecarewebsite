@@ -1,0 +1,193 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Skip Link */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 10px;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+}
+.skip-link:focus {
+    top: 10px;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Image Gallery */
+.image-gallery img,
+.product img {
+    width: 100%;         /* Adjust width to fill the container */
+    max-width: 300px;    /* Set maximum width */
+    height: auto;        /* Maintain aspect ratio */
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+.image-gallery img:hover,
+.product img:hover {
+    transform: scale(1.1);
+}
+
+/* Grid Layout */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Flex Layout */
+.product-list .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+}
+form label {
+    margin: 10px 0 5px;
+}
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+form input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+footer a {
+    color: #fff;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+h1, h2, h3 {
+    font-family: 'Arial', sans-serif;  /* Change to a modern, clean font */
+    text-transform: uppercase;         /* Make text uppercase for emphasis */
+    letter-spacing: 2px;               /* Add some space between letters */
+    color: #333;                       /* Dark text color for contrast */
+    text-align: center;                /* Center align the headings */
+    padding: 20px 0;                   /* Add padding for breathing room */
+    margin: 0;
+}
+/* Main Heading (h1) */
+h1 {
+    font-size: 3em;                    /* Larger font size */
+    background: linear-gradient(45deg, #6a11cb, #2575fc); /* Gradient background */
+    -webkit-background-clip: text;     /* Clip background to text */
+    color: transparent;                /* Make text transparent so the gradient shows */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+}
+
+/* Subheadings (h2 and h3) */
+h2, h3 {
+    font-size: 2.5em;                  /* Slightly smaller than h1 but still bold */
+    color: #f96f59;                    /* Bright color to stand out */
+    border-bottom: 3px solid #f96f59;  /* Add a bold bottom border */
+    padding-bottom: 10px;              /* Space between text and border */
+    margin-top: 20px;                  /* Margin for spacing above */
+}
+
+/* Headings on hover for extra effect */
+h1:hover, h2:hover, h3:hover {
+    transform: translateY(-5px); /* Slightly lift the headings on hover */
+    transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+}
+/* Footer Styling */
+footer {
+    background-color: #333;              /* Dark background color */
+    color: white;                        /* White text for contrast */
+    padding: 20px 0;                     /* Padding for spacing */
+    text-align: center;                  /* Center the text */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    max-width: 1200px;                   /* Limit max width */
+    margin: 0 auto;                      /* Center align */
+    padding: 0 20px;                     /* Padding for spacing */
+}
+
+.footer-content p {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+.footer-content ul {
+    list-style-type: none;               /* Remove list bullets */
+    padding: 0;
+}
+
+.footer-content li {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+.footer-content a {
+    color: #f96f59;                      /* Link color */
+    text-decoration: none;               /* Remove underline */
+    transition: color 0.3s ease;          /* Smooth color transition */
+}
+
+.footer-content a:hover {
+    color: #ffffff;                     /* Change link color on hover */
+    text-decoration: underline;          /* Underline on hover */
+}
+
